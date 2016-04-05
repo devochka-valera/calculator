@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/calc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/js/calc_vanilla.js"></script>
+
+</head>
+
+<body>
+    <div class="container calc">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="num1" placeholder="number">
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <!-- Single button -->
+                <div class="btn-group">
+                    <button type="button" id="btnSelect" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Action <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li onclick="selectAction('+')"><a href="#">+</a></li>
+                        <li onclick="selectAction('-')"><a href="#">-</a></li>
+                        <li onclick="selectAction('*')"><a href="#">*</a></li>
+                        <li onclick="selectAction('/')"><a href="#">/</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="num2" placeholder="number">
+                </div>
+            </div>
+            <div class="col-xs-1">
+                <button type="button" class="btn btn-default" id="btnEgually" onclick="calculate()">=</button>
+
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="result" placeholder="result" disabled>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
